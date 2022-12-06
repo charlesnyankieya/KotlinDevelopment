@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditTextActivity">
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/edittextbackground"
+        android:hint="Enter firstname here"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:autofillHints="name"
+        android:padding="15dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/secondname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstname"
+        android:layout_centerInParent="true"
+        android:hint="Enter secondname here"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/edittextbackground"
+        android:layout_marginBottom="40dp"
+        android:padding="15dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/thirdname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondname"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/edittextbackground"
+        android:hint="Enter your thirdname here"
+        android:padding="15dp"
+        android:textColor="@color/black" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:layout_below="@+id/thirdname"
+        android:layout_centerHorizontal="true"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clickme"
+        android:text="Click me"
+        android:onClick="buttonFunc"
+        android:textAllCaps="false"
+        android:layout_below="@+id/submit"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
