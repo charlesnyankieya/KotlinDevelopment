@@ -16,8 +16,6 @@ class EditTextActivity : AppCompatActivity() {
         setContentView(R.layout.activity_edit_text)
 
 
-
-
         val buttonListener = findViewById<Button>(R.id.submit) as Button
         buttonListener.setOnClickListener { Toast.makeText(this@EditTextActivity, "By Using on click listener", Toast.LENGTH_SHORT).show() }
 
@@ -27,7 +25,6 @@ class EditTextActivity : AppCompatActivity() {
         val thirdName = findViewById<EditText>(R.id.thirdname) as EditText
         firstName.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-
             }
 
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
@@ -37,7 +34,6 @@ class EditTextActivity : AppCompatActivity() {
 
             override fun afterTextChanged(p0: Editable?) {
             }
-
         })
 
         secondName.addTextChangedListener(object : TextWatcher {

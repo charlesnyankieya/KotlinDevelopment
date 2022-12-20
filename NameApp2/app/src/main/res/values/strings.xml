@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">NameApp</string>
+    <string name="enter_firstname_here">Enter firstname here</string>
+    <string name="enter_secondname_here">Enter secondname here</string>
+    <string name="enter_your_thirdname_here">Enter your thirdname here</string>
 </resources>

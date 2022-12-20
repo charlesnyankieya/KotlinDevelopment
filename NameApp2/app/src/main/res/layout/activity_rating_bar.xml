@@ -3,42 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:id="@+id/back"
     android:layout_height="match_parent"
-    tools:context=".RadioButtonActivity">
-    <RadioGroup
+    tools:context=".RatingBarActivity">
+    <androidx.appcompat.widget.AppCompatRatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/radioGroup"
-        android:padding="20dp">
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/red"
-            android:text="Red"
-            android:textSize="20sp"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/green"
-            android:text="Green"
-            android:textSize="20sp"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/blue"
-            android:text="Blue"
-            android:textSize="20sp"/>
-    </RadioGroup>
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/radioGroup"
+        android:id="@+id/rating"
+        android:numStars="5"
+        android:stepSize="0.25"
+        android:progressTint="@color/black"
+        android:backgroundTint="@color/white"
+        android:progressBackgroundTint="#808080"
+        android:indeterminateTint="#808080"
+        android:rating="5"
         android:layout_centerHorizontal="true"
-        android:text="Reset"
+        android:layout_margin="20dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ratingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rating"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black"
+        android:text="Click"
+        android:textColor="@color/white"
         android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:id="@+id/reset"/>
+        android:padding="20dp"
+        android:textSize="20sp"/>
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
